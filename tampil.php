@@ -84,7 +84,7 @@
                     <td>$tampil[pemilik]</td>
                     <td>$tampil[alamat]</td>
                     <td><a href='?kode=$tampil[jeniskendaraan]'> Hapus </a></td>
-                    <td><a href='update.php?kode=$tampil[jeniskendaraan]'> Ubah </a></td>
+                    <td><a href='edit.php?kode=$tampil[jeniskendaraan]'> Ubah </a></td>
 
                 </tr>";
 
