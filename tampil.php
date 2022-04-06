@@ -95,7 +95,16 @@
         
         
     </table>
-    
+    <?php
+        include "koneksi.php";
+
+        if (isset($_GET['kode'])) {
+            mysqli_query($conn, "delete from kendaraan where jeniskendaraan='$_GET[kode]'");
+
+            echo "data berhasil dihapus";
+            echo  "<meta http-equiv=refresh content=2;URL='tampil.php'>";
+        }
+    ?>
 
     
     
@@ -104,6 +113,3 @@
 </body>
 </html>
 
-<?php
-    
-?>
